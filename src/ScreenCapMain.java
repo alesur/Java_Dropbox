@@ -14,6 +14,7 @@ public class ScreenCapMain {
 
     public static void main(String[] args) {
 
+
         final String ACCESS_TOKEN = "W4Md5J_Sa5AAAAAAAAAAAVsHqEgowVi72EJq20_zcaW_YTTbyO5rAWpsmo5YSMq1";
         Robot r = null;
         try {
@@ -22,7 +23,7 @@ public class ScreenCapMain {
             e.printStackTrace();
         }
 
-        DbxRequestConfig config = DbxRequestConfig.newBuilder("dropbox/java-tutorial").build();
+        DbxRequestConfig config = DbxRequestConfig.newBuilder("dropbox/ScreenCap").build();
         DbxClientV2 client = new DbxClientV2(config, ACCESS_TOKEN);
         for(;;) {
 
@@ -42,7 +43,7 @@ public class ScreenCapMain {
             upl.start();
 
             try {
-                sleep(5000);
+                sleep(10000);
             } catch (InterruptedException e) {
                 e.printStackTrace();
             }
