@@ -1,5 +1,4 @@
 import com.dropbox.core.v2.DbxClientV2;
-
 import java.io.InputStream;
 import java.text.SimpleDateFormat;
 import java.util.Date;
@@ -17,7 +16,6 @@ public class UploadThread extends Thread {
 
     SimpleDateFormat dateFormat = new SimpleDateFormat("yyyyMMdd_HHmmss");
     Date now = new Date();
-
 
     @Override
     public void run() {
